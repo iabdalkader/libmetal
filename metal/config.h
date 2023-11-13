@@ -16,32 +16,35 @@
 extern "C" {
 #endif
 
+#include "metal/metal_config.h"
+
 /** Library major version number. */
-#define METAL_VER_MAJOR		@PROJECT_VERSION_MAJOR@
+#define METAL_VER_MAJOR     1
 
 /** Library minor version number. */
-#define METAL_VER_MINOR		@PROJECT_VERSION_MINOR@
+#define METAL_VER_MINOR     5
 
 /** Library patch level. */
-#define METAL_VER_PATCH		@PROJECT_VERSION_PATCH@
+#define METAL_VER_PATCH     0
 
 /** Library version string. */
-#define METAL_VER		"@PROJECT_VERSION@"
+#define METAL_VER           "1.5.0"
 
-/** System type (linux, generic, ...). */
-#define METAL_SYSTEM		"@PROJECT_SYSTEM@"
-#define METAL_SYSTEM_@PROJECT_SYSTEM_UPPER@
+#ifndef METAL_PROCESSOR_CPU_H
+#define METAL_PROCESSOR_CPU_H    "metal/processor/arm/cpu.h"
+#endif 
 
-/** Processor type (arm, x86_64, ...). */
-#define METAL_PROCESSOR		"@PROJECT_PROCESSOR@"
-#define METAL_PROCESSOR_@PROJECT_PROCESSOR_UPPER@
+#ifndef METAL_PROCESSOR_ATOMIC_H
+#define METAL_PROCESSOR_ATOMIC_H    "metal/processor/arm/atomic.h"
+#endif 
 
-/** Machine type (zynq, zynqmp, ...). */
-#define METAL_MACHINE		"@PROJECT_MACHINE@"
-#define METAL_MACHINE_@PROJECT_MACHINE_UPPER@
+#ifndef HAVE_STDATOMIC_H
+#define HAVE_STDATOMIC_H    0
+#endif
 
-#cmakedefine HAVE_STDATOMIC_H
-#cmakedefine HAVE_FUTEX_H
+#ifndef HAVE_FUTEX_H
+#define HAVE_FUTEX_H        0
+#endif
 
 #ifdef __cplusplus
 }
