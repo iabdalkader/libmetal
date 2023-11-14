@@ -22,7 +22,7 @@
 extern "C" {
 #endif
 
-#include "meta/metal_config.h"
+#include "metal/metal_config.h"
 
 #ifdef __cplusplus
 }
