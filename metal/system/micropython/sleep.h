@@ -22,7 +22,7 @@
 extern "C" {
 #endif
 
-#include "metal/metal_config.h"
+int __metal_sleep_usec(unsigned int usec);
 
 #ifdef __cplusplus
 }
