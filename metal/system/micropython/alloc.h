@@ -24,11 +24,11 @@ extern "C" {
 #endif
 
 static inline void *__metal_allocate_memory(unsigned int size) {
-    return m_malloc(size);
+    return m_tracked_calloc(1, size);
 }
 
 static inline void __metal_free_memory(void *ptr) {
-    m_free(ptr);
+    m_tracked_free(ptr);
 }
 
 #ifdef __cplusplus
