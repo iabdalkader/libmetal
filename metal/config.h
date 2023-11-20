@@ -16,7 +16,7 @@
 extern "C" {
 #endif
 
-#include "metal/metal_config.h"
+#include "metal/metal_port.h"
 
 /** Library major version number. */
 #define METAL_VER_MAJOR     1

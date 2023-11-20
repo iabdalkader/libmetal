@@ -38,7 +38,7 @@
 #error "Include metal/log.h instead of metal/generic/log.h"
 #endif
 
-#include "metal/metal_config.h"
+#include "metal/metal_port.h"
 
 #ifndef __METAL_MICROPYTHON_LOG__H__
 #define __METAL_MICROPYTHON_LOG__H__

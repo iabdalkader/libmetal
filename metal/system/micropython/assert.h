@@ -16,7 +16,7 @@
 #ifndef __METAL_MICROPYTHON_ASSERT__H__
 #define __METAL_MICROPYTHON_ASSERT__H__
 
-#include "metal/metal_config.h"
+#include "metal/metal_port.h"
 
 #endif /* __METAL_MICROPYTHON_ASSERT__H__ */
 
