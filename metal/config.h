@@ -38,13 +38,8 @@ extern "C" {
 #define METAL_PROCESSOR_ATOMIC_H    "metal/processor/arm/atomic.h"
 #endif 
 
-#ifndef HAVE_STDATOMIC_H
-#define HAVE_STDATOMIC_H    0
-#endif
-
-#ifndef HAVE_FUTEX_H
-#define HAVE_FUTEX_H        0
-#endif
+#define HAVE_STDATOMIC_H    METAL_HAVE_STDATOMIC_H
+#define HAVE_FUTEX_H        METAL_HAVE_FUTEX_H
 
 #ifdef __cplusplus
 }
