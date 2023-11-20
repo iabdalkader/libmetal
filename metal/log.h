@@ -95,16 +95,10 @@ extern void metal_default_log_handler(enum metal_log_level level,
  * @param	fmt	Format string.
  * @param	args... Variable number of arguments.
  */
-
-/*
 #define metal_log(level, fmt, args...) ({				   \
 	if (_metal.common.log_handler && level <= _metal.common.log_level) \
 		_metal.common.log_handler(level, metal_fmt(fmt), ##args);  \
 })
-*/
-#include "py/mphal.h"
-
-#define metal_log(level, ...) mp_printf(&mp_plat_print, __VA_ARGS__)
 
 #define metal_err(fmt, args...) metal_log(METAL_LOG_ERROR, fmt, ##args)
 #define metal_warn(fmt, args...) metal_log(METAL_LOG_WARNING, fmt, ##args)

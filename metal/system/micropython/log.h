@@ -38,11 +38,19 @@
 #error "Include metal/log.h instead of metal/generic/log.h"
 #endif
 
+#include "metal/metal_config.h"
+
 #ifndef __METAL_MICROPYTHON_LOG__H__
 #define __METAL_MICROPYTHON_LOG__H__
 
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+#if METAL_LOG_HANDLER_ENABLE
+#include "py/mphal.h"
+#undef metal_log
+#define metal_log(level, ...) mp_printf(&mp_plat_print, __VA_ARGS__)
 #endif
 
 #ifdef __cplusplus
