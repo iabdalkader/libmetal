@@ -12,7 +12,7 @@
 #ifndef __METAL_ASSERT__H__
 #define __METAL_ASSERT__H__
 
-#include <metal/system/micropython/assert.h>
+#include "system/assert.h"
 
 /**
  * @brief Assertion macro.

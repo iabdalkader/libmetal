@@ -369,6 +369,6 @@ int metal_io_block_set(struct metal_io_region *io, unsigned long offset,
 }
 #endif
 
-#include <metal/system/micropython/io.h>
+#include "system/io.h"
 
 #endif /* __METAL_IO__H__ */

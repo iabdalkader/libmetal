@@ -12,7 +12,7 @@
 #ifndef __METAL_MUTEX__H__
 #define __METAL_MUTEX__H__
 
-#include <metal/system/micropython/mutex.h>
+#include "system/mutex.h"
 
 #ifdef __cplusplus
 extern "C" {

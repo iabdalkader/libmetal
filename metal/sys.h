@@ -82,7 +82,7 @@ struct metal_common_state {
 
 struct metal_state;
 
-#include <metal/system/micropython/sys.h>
+#include "system/sys.h"
 
 #ifndef METAL_INIT_DEFAULTS
 #define METAL_INIT_DEFAULTS				\

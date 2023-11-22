@@ -12,7 +12,7 @@
 #ifndef __METAL_ALLOC__H__
 #define __METAL_ALLOC__H__
 
-#include <metal/system/micropython/alloc.h>
+#include "system/alloc.h"
 
 #ifdef __cplusplus
 extern "C" {
