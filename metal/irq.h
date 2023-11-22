@@ -93,7 +93,7 @@ void metal_irq_enable(unsigned int vector);
  */
 void metal_irq_disable(unsigned int vector);
 
-#include "system/irq.h"
+#include <metal/system/micropython/irq.h>
 
 /** @} */
 
